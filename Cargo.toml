@@ -1,0 +1,21 @@
+[package]
+name = "dejavu-rs"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+rustfft = { version = "6.1.0" }
+rayon = "1.8.1"
+md5 = "0.7.0"
+axum = { version = "0.7.4", features = ["multipart"] }
+serde = { version = "1.0.197", features = ["derive"] }
+tokio = { version = "1.36.0", features = ["rt-multi-thread"] }
+futures-util = "0.3.30"
+lru = "0.12.2"
+lazy_static = "1.4.0"
+minimp3 = { version = "0.5.1", features = ["async_tokio"] }
+image = "0.24.8"
+ulid = "1.1.2"
+tokio-util = "0.7.10"
